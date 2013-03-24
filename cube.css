@@ -67,6 +67,5 @@ input {
 
 
 
-.step { opacity: 0.5; }
-.step.nested-active, .step.active, .step.active .step { opacity: 1 }
+
 }
