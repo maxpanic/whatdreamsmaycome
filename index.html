@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>jmpress.js | cube example</title>
+	<title>Grace Hopper</title>
 
 	<meta name="description" content="jmpress.js is a jQuery plugin to build a website on the infinite canvas">
 	<meta name="author" content="Kyle Robinson Young @shama & Tobias Koppers @sokra" />
@@ -13,74 +13,234 @@
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="jmpress.js"></script>
-  
-</script>
+
+
 </head>
 <body>
 
 <div id="cube">
-	<!--<div class="step" id="front" data-z="500" data-up="#top" data-down="#bottom">
+	<!--<div class="step" id="front" data-z="-2200" data-up="#top" data-down="#bottom">
 		
 		
 	</div>-->
-	<div class="step" id="front1" data-rotate-y="3" data-z="-1100" data-x="-2100" data-y="-500" >
-		1<img src="office4.jpg" ></img>
-	</div>
-
-	<div class="step" id="front2" data-rotate-y="0" data-z="-2000" data-x="-1200" data-y="-500" >
-		2<video id="Video1" controls height=320 width=480 ><source src="cat.webm" type="video/webm" /></video>
-		<a href="http://www.google.ca">link</a>
-	</div>
-
-	<div class="step" id="front3" data-rotate-y="5" data-z="-1800" data-x="-300" data-y="-500" >
-		3
-		
-	</div>
-
-	<div class="step" id="front4" data-rotate-x="0" data-z="-1900" data-x="900" data-y="-500" >
-		4
-	</div>
-
-	<div class="step" id="front5" data-rotate-y="-10" data-z="-1200" data-x="2000" data-y="-500" >
-		5		
-	</div>
-
-
-	<div class="step" id="desk" data-rotate-x="90" data-rotate-y="0" data-z="-1500" data-y="-50" >
+	<div class="step" id="desk" data-rotate-x="90" data-rotate-y="0" data-z="-1500" data-y="-80" >
 		ledge
 	</div>
 
-	<!--END OF BEGINNING -->
-
-	<div class="step" id="front6" data-rotate-y="3" data-z="-1100" data-x="-2100" data-y="1000" data-up="#front" data-down="#back">
-		6<img src="office4.jpg"></img>
+	<!--<div class="step" id="front5" data-rotate-y="-10" data-z="-1200" data-x="2800" data-y="-500" >
+		5	
+		<div id="info3" data-jmpress="fade after 1s step">
+		<div>info</div>
+		</div>	
 	</div>
 
-	<div class="step" id="front7" data-rotate-y="0" data-z="-2000" data-x="-1200" data-y="1000" >
-		7<video id="Video1" controls height=320 width=480 ><source src="cat.webm" type="video/webm" /></video>
-		<a href="http://www.google.ca">link</a>
+	<div class="step" id="front4" data-rotate-x="0" data-z="-1600" data-x="1500" data-y="-500" >
+		4
+		<div id="info3" data-jmpress="fade after 1s step">
+		<div>info</div>
+		</div>
+	</div>-->
+
+	<div class="step" id="front3" data-rotate-x="5" data-rotate-y="5" data-z="-1600" data-x="0" data-y="-600" >
+		<div id="vasser" ><img src="vasser.jpg" ></img></div>
+		<div class="info" id="info3" data-jmpress="fade after 1s step">
+			<div data-jmpress="fade after 2s step" >
+				<br></br>
+				<br></br>
+				<ul>
+					<li>1924: Attends Vasser College.</li>
+				</ul>
+				<div data-jmpress="fade after 10s step" >
+					<ul>
+						<p>
+						<li>1928: Graduated from Vasser, majoring in mathematics.</li>
+					</ul>
+					<div data-jmpress="fade after 15s step" >
+					<ul>
+						<p>
+						<li>1930: At age 23 she earned her masters degree in mathmatics from Yale.</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
-	<div class="step" id="front8" data-rotate-y="5" data-z="-1800" data-x="-300" data-y="1000" >
-		8
+	<div class="step" id="front2" data-rotate-y="0" data-z="-1100" data-x="2200" data-y="-800" >
+		<div id="childhood" ><img src="youngGrace.jpg" ></img></div>
+		<div class="info" id="info2" data-jmpress="fade after 1s step">
+			<br></br>
+			<br></br>
+			<ul>
+				<li>Grace was born on December 9, 1906.</li>
+				<p>
+				<li>Disassembled alarm clocks in order to learn how they worked.</li>
+				<p>
+				<li>Grace was encouraged to follow her dreams at an early age.</li>
+			</ul>
+		</div>
+	</div>
+
+	    
+	<div class="step" id="front1" data-rotate-y="3" data-z="-900" data-x="-1900" data-y="-500" >
+		<video id="video" height=720 width=1200 >			
+			<source src="introGrace.webm" type="video/webm" />
+			<source src="introGrace.mp4" type="video/mp4" />
+		</video>
+
+	</div>
+	
+	<div class="step" id="bottom" data-rotate-y="3" data-z="2000" data-x="-4700" data-y="800" >
+		
+		<div data-jmpress="fade after 2s step" data-rotate-y="-25" ><img src="grace.png" ></img></div>
+		<div id="info1" data-jmpress="fade after 1s step">
+		<img src="clock.png" ></img>
+		</div>
 		
 	</div>
 
-	<div class="step" id="front9" data-rotate-x="0" data-z="-1900" data-x="900" data-y="1000" >
-		9
-	</div>
 
-	<div class="step" id="front10" data-rotate-y="-10" data-z="-1200" data-x="2000" data-y="1000" >
+
+	<!-- Level 2 -->
+
+	<!--<div class="step" id="front10" data-rotate-y="-10" data-z="-1200" data-x="2000" data-y="1000" >
 		10		
 	</div>
-
+	<div class="step" id="front9" data-rotate-x="0" data-z="-1700" data-x="900" data-y="1000" >
+		9
+	</div>
+	-->
 
 	<div class="step" id="desk" data-rotate-x="90" data-rotate-y="0" data-z="-1500" data-y="1450" >
 		ledge
 	</div>
-	
-	
+
+
+	<div class="step" id="randPic1" data-rotate-x="0" data-z="-1700" data-x="-400" data-y="1000" >
+		<div id="randPic" ><img src="randPic1.jpg"></img></div>
+	</div>
+
+
+
+	<div class="step" id="front8" data-rotate-y="-45" data-z="2500" data-x="5000" data-y="1000" >
+		<video id="video2" controls height=720 width=1200 >
+			<source src="nanoGrace.webm" type="video/webm" />
+			<source src="nanoGrace.mp4" type="video/mp4" />
+		</video>
 		
+	</div>
+
+	<div class="step" id="front7" data-rotate-y="-5" data-z="-1500" data-x="1650" data-y="900" >
+		<div id="teaching" ><img src="teachingGrace.jpg"></img></div>
+		<div class="info" id="info7" data-jmpress="fade after 1s step">
+			<br></br>
+			<br></br>
+			<ul>
+				<li>Taught all throughout her adult life.</li>
+				<p>
+				<li>She taught that humans could only preform operations sequentially rather than parallel, like computers. In this respect multi-dimensional mathematics should be human's priority.</li>
+				<p>
+				<li>Grace aimed to teach her students using practicality when it came to the abstruse.</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="step" id="front6" data-rotate-y="15" data-z="-1100" data-x="-1100" data-y="700" data-up="#front" data-down="#back">
+		<div id="inventions" ><img src="inventionsGrace.jpg"></img></div>
+		<div class="info" id="info6" data-jmpress="fade after 1s step">
+			<br></br>
+			<br></br>
+			<ul>
+				<li>Grace was able to turn human readable code into machine code.</li>
+				<p>
+				<li>"I had a running compiler, and nobody would touch it because, they carefully told me, computers could only do arithmetic; they could not do programs."</li>
+				<p>
+				<li>She created the COBOL, which is still widely used.</li>
+			</ul>
+		</div>
+	</div>
+
+
+
+	<!-- Level 3 -->
+	
+		<div class="step" id="desk" data-rotate-x="90" data-rotate-y="0" data-z="-1500" data-y="2950" >
+		ledge
+	</div>
+
+	<!--<div class="step" id="front5" data-rotate-y="-10" data-z="-1200" data-x="2800" data-y="2500" >
+		5	
+		<div id="info3" data-jmpress="fade after 1s step">
+		<div>info</div>
+		</div>	
+	</div>
+
+	-->
+
+	<div class="step" id="front13" data-rotate-x="5" data-rotate-y="5" data-z="-1600" data-x="100" data-y="2750" data-duration="2000" data-duration-action="prev" >
+		<div id="navy" ><img src="navy.jpg" ></img></div>
+		<div class="info" id="info13" data-jmpress="fade after 2s step">
+		<div data-jmpress="fade after 2s step" >
+				<br></br>
+				<br></br>
+				<ul>
+					<li>1924: Attends Vasser College.</li>
+				</ul>
+		</div>
+
+		<div class="step" id="front13" data-rotate-x="5" data-rotate-y="5" data-z="-1600" data-x="100" data-y="2750" data-duration="3000" >
+			<div class="info" id="info13" data-jmpress="fade after 2s step">
+				<div data-jmpress="fade after 2s step" >
+						<br></br>
+						<br></br>
+						<ul>
+							<li>1924: does not Attends Vasser College.</li>
+						</ul>
+				</div>
+			</div></div>
+
+		<div><div></div></div>
+		</div>
+	</div>
+
+	<div class="step" id="front4" data-rotate-x="5" data-rotate-y="-5"data-z="-1500" data-x="800" data-y="2700" >
+		<div id="randPic2" ><img src="blueGrace.jpg" ></img>
+		</div>
+	</div>
+
+	<div class="step" id="front12" data-rotate-y="10" data-z="-1200" data-x="-2100" data-y="2250" >
+		<div id="impact" ><img src="impactGrace.jpg" ></img></div>	
+		<div class="info" id="info12" data-jmpress="fade after 1s step">
+		<br></br>
+			<br></br>
+			<ul>
+				<li>Grace's "farfetched" ideas continue to be realized.</li>
+				<p>
+				<li>She faced extreme resistance when trying to push her ideas forward, her perseverance is our reward.</li>
+				<p>
+				<li>Grace maintained that even the most limited technologies can be used for complex tasks.</li>
+			</ul>
+		</div>
+	</div>
+
+	    
+	<div class="step" id="front11" data-rotate-x="2" data-rotate-y="-10" data-z="-900" data-x="2100" data-y="2450" >
+		<div id="legacy" ><img src="legacyGrace.jpg"></img></div>
+		<div class="info" id="info11" data-jmpress="fade after 1s step">
+		<br></br>
+			<br></br>
+			<ul>
+				<li>1994: Inducted into the National Women's Hall of Fame.</li>
+				<p>
+				<li> "Our young people are the future. We must provide for them. We must give them the positive leadership they're looking for...You manage things; you lead people."</li>
+				<p>
+				<li>Grace Hopper Celebration of Women in Computing, is an event held in Grace's honor.</li>
+			</ul>
+		</div>
+		
+	</div>
+	
+			
 </div>
 
 
@@ -104,8 +264,8 @@ $(function() {
 	cube.jmpress({
 
 		viewPort: {
-			width: 2000,
-			height: 2000
+			width: 1000,
+			height: 1500
 		},
 		keyboard: {
 			keys: {
@@ -114,7 +274,12 @@ $(function() {
 			}
 		}
 	});
-	cube.jmpress("route", ["#front1", "#front2", "#front3", "#front4", "#front5", "#front6", "#front7", "#front8", "#front9", "#front10", "#front1"]);
+
+
+
+	cube.jmpress("route", ["#bottom","#front1", "#front2", "#front3", "#front6", "#front7", "#front8", "#front11", "#front12", "#front13", "#front1"]);
+
+	
 	
 });
 </script>

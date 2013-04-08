@@ -1,8 +1,8 @@
 /** GENERAL **/
 body {
 	font-family: Verdana, sans-serif;
+	background-color:gray;
 	min-height: 740px;
-	background-image: url('grad.jpg');
 	-webkit-font-smoothing: antialiased;
 	
 }
@@ -14,12 +14,13 @@ body {
 
 	display: block;
     padding: 100px;
-	
-	font-size: 100px;
-
-    border: 10px solid black;
-	
+    
+	background-color:rgba(0,0,0,0);
+	border: none;
+	/**
+	border: 10px solid black;
 	background-color: #FFF;
+	**/
 
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing:    border-box;
@@ -30,42 +31,191 @@ body {
 p {
 	font-size: 50px;
 }
+
 input {
 	height: 50px;
 	font-size: 50px;
 }
-#back {
-	
-	background-image:url('office1.jpg');
-	background-size:contain;
+
+li {
+	font-size: 75px;
+	font-family: Cambria Math;
 }
+
 #front {
+	background-image: url('wallpaper.png');
+	width: 6000px;
+    height: 4000px;
 	background-color:rgba(0,0,0,0);
 	border: none;
+	pointer-events: none;
 }
-#floor2 {
-	width: 4000px;
-    height: 4000px;
-}
+
 #bottom {
 	background-color:rgba(0,0,0,0);
 	border: none;
+	
 }
-#leg {
-	background-color:rgba(0,0,0,0);
-	width: 700px;
-    height: 400px;
-}
+
 #desk {
-	width: 6000px;
-    height: 2000px;
+	width: 5000px;
+    height: 1500px;
     pointer-events: none;
+    background-image:url('wood.jpg');
 
 }
+#blank {
+	width: 700px;
+    height: 700px;
+    pointer-events: none;
+    
 
+}
+#title {
+	height: 1000px;
+	width: 1000px;
+	background-color:rgba(0,0,0,0);
+	border: none;
+	background-image:url('office1.jpg');
+	
+}
+
+.info {
+	background-color:rgba(255,255,255,0.7);
+	border: 2px solid gray;
+
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+#info1 {
+	position: absolute;
+	right: 600px;
+	top: -300px;
+
+}
+#info2 {
+	width: 1400px;
+    height: 775px;
+	position: absolute;
+	right: -1800px;
+	top: -100px;
+}
+#info3 {
+	width: 1200px;
+    height: 800px;
+	position: absolute;
+	right: -1850px;
+	top: -100px;
+}
+
+#info6 {
+	width: 1400px;
+    height: 1000px;
+	position: absolute;
+	right: -1800px;
+	top: 150px;
+}
+
+#info7 {
+	width: 1200px;
+    height: 1200px;
+	position: absolute;
+	right: -1600px;
+	top: 50px;
+}
+
+#info11 {
+	width: 1200px;
+    height: 1200px;
+	position: absolute;
+	right: -1550px;
+	top: -150px;
+}
+
+#info12 {
+	width: 1200px;
+    height: 1000px;
+	position: absolute;
+	right: 675px;
+	top: 250px;
+}
+
+#info13 {
+	width: 700px;
+    height: 800px;
+	position: absolute;
+	right: -600px;
+	top: 50px;
+}
+
+#front1 {
+	left: -300px;
+	
+}
+
+#front2 {
+	left: -1000px;
+	
+}
+#front3 {
+	left: -800px;
+	
+}
+
+#front6 {
+	left: -800px;
+	top: -150px;
+	
+}
+
+#front7 {
+	left: -600px;
+	top: -250px;
+	
+}
+
+#front8 {
+	left: -475px;
+	top: -75px;
+	
+}
+
+#front11 {
+	left: -600px;
+	
+}
+
+#front12 {
+	left: 200px;
+	top: -350px;
+	
+}
+
+#front13 {
+	left: -600px;
+	top: -250px;
+	
+}
 /** ANIMATION **/
 
+.will-fade {
+-webkit-transition: opacity 1s;
+-moz-transition: opacity 1s;
+-ms-transition: opacity 1s;
+-o-transition: opacity 1s;
+transition: opacity 1s;
 
+opacity: 0;
+}
+.fade, .not-supported .will-fade {
+opacity: 1;
+}
 
-
+.do-fade, .do-fade-slow, .do-fade-fast {
+    opacity: 1;
+}
+.has-fade {
+    opacity: 0;
+}
+.step.nested-active, .step.active, .step.active .step { opacity: 1 }
 }
