@@ -4,25 +4,25 @@
 	<meta charset="utf-8" />
 	<title>Grace Hopper</title>
 
-	<meta name="description" content="Grace Hopper">
-	<meta name="author" content="481 co." />
+	<meta name="description" content="jmpress.js is a jQuery plugin to build a website on the infinite canvas">
+	<meta name="author" content="Kyle Robinson Young @shama & Tobias Koppers @sokra" />
 	<meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=yes" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 	<link href="cube.css" rel="stylesheet" type="text/css" />
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script type="text/javascript" src="jmpress.js"></script>
+	<script type="text/javascript" src="jmpress2.js"></script>
 
 
 </head>
 <body>
 
+        
+
 <div id="cube">
-	<!--<div class="step" id="front" data-z="-2200" data-up="#top" data-down="#bottom">
-		
-		
-	</div>-->
+	<div class="step" id="front" data-z="-2200" >	
+	</div>
 	<div class="step" id="desk" data-rotate-x="90" data-rotate-y="0" data-z="-1500" data-y="-80" >
 		ledge
 	</div>
@@ -50,12 +50,12 @@
 				<ul>
 					<li>1924: Attends Vasser College.</li>
 				</ul>
-				<div data-jmpress="fade after 10s step" >
+				<div data-jmpress="fade after 5s step" >
 					<ul>
 						<p>
 						<li>1928: Graduated from Vasser, majoring in mathematics.</li>
 					</ul>
-					<div data-jmpress="fade after 15s step" >
+					<div data-jmpress="fade after 10s step" >
 					<ul>
 						<p>
 						<li>1930: At age 23 she earned her masters degree in mathmatics from Yale.</li>
@@ -90,7 +90,7 @@
 
 	</div>
 	
-	<div class="step" id="bottom" data-rotate-y="3" data-z="2000" data-x="-4700" data-y="800" >
+	<div class="step" id="bottom" data-rotate-y="3" data-z="-2100" data-x="-4000" data-y="800" >
 		
 		<div data-jmpress="fade after 2s step" data-rotate-y="-25" ><img src="grace.png" ></img></div>
 		<div id="info1" data-jmpress="fade after 1s step">
@@ -122,7 +122,7 @@
 
 
 
-	<div class="step" id="front8" data-rotate-y="-45" data-z="2500" data-x="5000" data-y="1000" >
+	<div class="step" id="front8" data-rotate-z="90" data-z="-2000" data-x="7000" data-y="1000" >
 		<video id="video2" controls height=720 width=1200 >
 			<source src="nanoGrace.webm" type="video/webm" />
 			<source src="nanoGrace.mp4" type="video/mp4" />
@@ -145,7 +145,7 @@
 		</div>
 	</div>
 
-	<div class="step" id="front6" data-rotate-y="15" data-z="-1100" data-x="-1100" data-y="700" data-up="#front" data-down="#back">
+	<div class="step" id="front6" data-rotate-y="10" data-z="-1100" data-x="-1100" data-y="700" data-up="#front" data-down="#back">
 		<div id="inventions" ><img src="inventionsGrace.jpg"></img></div>
 		<div class="info" id="info6" data-jmpress="fade after 1s step">
 			<br></br>
@@ -177,36 +177,175 @@
 
 	-->
 
-	<div class="step" id="front13" data-rotate-x="5" data-rotate-y="5" data-z="-1600" data-x="100" data-y="2750" data-duration="2000" data-duration-action="prev" >
-		<div id="navy" ><img src="navy.jpg" ></img></div>
-		<div class="info" id="info13" data-jmpress="fade after 2s step">
-		<div data-jmpress="fade after 2s step" >
-				<br></br>
-				<br></br>
-				<ul>
-					<li>1924: Attends Vasser College.</li>
-				</ul>
-		</div>
-
-		<div class="step" id="front13" data-rotate-x="5" data-rotate-y="5" data-z="-1600" data-x="100" data-y="2750" data-duration="3000" >
-			<div class="info" id="info13" data-jmpress="fade after 2s step">
-				<div data-jmpress="fade after 2s step" >
-						<br></br>
-						<br></br>
-						<ul>
-							<li>1924: does not Attends Vasser College.</li>
-						</ul>
-				</div>
-			</div></div>
-
-		<div><div></div></div>
-		</div>
-	</div>
-
-	<div class="step" id="front4" data-rotate-x="5" data-rotate-y="-5"data-z="-1500" data-x="800" data-y="2700" >
+	<div class="step" id="front0" data-rotate-x="5" data-rotate-y="-5"data-z="-1600" data-x="800" data-y="2700" >
 		<div id="randPic2" ><img src="blueGrace.jpg" ></img>
 		</div>
 	</div>
+
+
+	<div class="step" id="front13" data-rotate-x="5" data-rotate-y="5" data-z="-1400" data-x="100" data-y="2750">
+    <div id="navy">
+        <img src="navy.jpg"></img>
+    </div>
+    <div class="info" id="info13" data-jmpress="fade after 2s step">
+
+    		<div class="nav" id="nav1" data-template="nav1" data-rotate-x="5" data-rotate-y="5"  overflow="visible" >
+            <section>
+                
+	<h1>Awards</h1>
+
+	        <ul>
+				<li>1928 - Phi Beta Kappa [honor society for undergraduate liberal arts and sciences majors]</li>
+				
+				<li>1934 - Sigma Xi [scientific research society]</li>
+				
+				<li>1946 - Naval Ordnance Development Award</li>
+				
+				<li>1962 - Fellow, IEEE</li>
+				
+				<li>1963 - Fellow, American Association for the Advancement of Science</li>
+				
+				<li>1964 - SWE (Society of Women Engineers) Achievement Award, Society of Women Engineers</li>
+				
+				<li>1968 - IEEE Philadelphia Section Achievement Award</li>
+				
+				<li>1968 - Connelly Memorial Award, Miami Valley Computer Association</li>
+				
+				<li>1969 - Computer Sciences "Man of the Year", Data Processing Management Association</li>
+			</ul>
+	            </section>
+	            <section>
+	                
+	<h1>Awards</h1>
+
+	        <ul>
+				<li>1970 - Upsilon Pi Epsilon [international honor society for the computing sciences], Honorary Member, Texas A&M</li>
+				
+				<li>1970 - Science Achievement Award, American Mothers Committee</li>
+				
+				<li>1970 - Harry Goode Memorial Award, American Federation of Information Processing Societies</li>
+				
+				<li>1972 - Honorary Doctor of Engineering, Newark College of Engineering</li>
+				
+				<li>1972 - Wilbur Lucius Cross Medal, Yale University</li>
+				
+				<li>1973 - Epsilon Delta Pi [honor society for computer information systems], Honorary Member, SUNY [State University of New York] Potsdam Chapter</li>
+				
+				<li>1973 - Honorary Doctor of Science, C.W. Post College, Long Island University</li>
+				
+			</ul>
+	            </section>
+	            <section>
+	                
+	<h1>Awards</h1>
+
+	        <ul>
+				<li>1973 - Elected to membership in the National Academy of Engineering.</li>
+				
+				<li>1973 - Legion of Merit</li>
+				
+				<li>1973 - Distinguished Fellow of the British Computer Society</li>
+				
+				<li>1974 - Honorary Doctor of Laws, University of Pennsylvania</li>
+				
+				<li>1976 - Distinguished Member Award, Washington D.C. Chapter, ACM</li>
+				
+				<li>1976 - Honorary Doctor of Science, Pratt Institute</li>
+				
+				<li>1976 - W. Wallace McDowell Award, IEEE Computer Society</li>
+				
+				<li>1980 - Three honorary doctorates</li>
+				
+				<li>1980 - Meritorious Service Medal</li>
+				<li>1981 - Three honorary doctorates</li>
+				<li>1982 - Two honorary doctorates</li>
+			</ul>
+	            </section>
+	            <section>
+	                
+	<h1>Awards</h1>
+
+	        <ul>
+				<li>1983 - Five honorary doctorates</li>
+				
+				<li>1983 - Institute of Electrical and Electronic Engineers Computer Pioneer Medal</li>
+				
+				<li>1983 - Golden Plate Award, American Academy of Achievement, California</li>
+				
+				<li>1983 - American Association of University Women Achievement Award</li>
+				
+				<li>1983 - Federally Employed Women Achievement Award</li>
+				
+				<li>1983 - Association for Computing Machinery Distinguished Service Award</li>
+				
+				<li>1984 - Eight honorary doctorates</li>
+				
+				<li>1984 - Living Legacy Award, Women's International Center, California</li>
+			</ul>
+	            </section>
+	            <section>
+	                
+	<h1>Awards</h1>
+
+	        <ul>
+				<li>1984 - Woman of the Year Award, Young Women's Christian Association of the National Capitol Area</li>
+				
+				<li>1985 - Seven honorary doctorates</li>
+				
+				<li>1985 - The Grace Murray Hopper Service Center built at NARDAC [Navy Regional Data Automation Center] San Diego</li>
+				
+				<li>1986 - Four honorary doctorates</li>
+				
+				<li>1986 - Defense Distinguished Service Medal</li>
+				
+				<li>1986 - Meritorious Citation, Navy Relief Society</li>
+				
+				<li>1987 - One honorary doctorate</li>
+				
+				<li>1988 - The Charles Holmes Pette Medal, University of New Hampshire</li>
+				
+				<li>1988 - The Emanuel R. Piore Award, Institute of Electrical and Electronics Engineers</li>
+
+				<li>1990 - National Medal of Technology</li>
+			</ul>
+	            </section>
+	            <section>
+	                
+	<h1>Quotes</h1>
+
+	                <p style="text-align:center;" >“It is easier to apologize than to get permission.”</p>
+	            </section>
+	            <section>
+	                
+	<h1>Quotes</h1>
+
+	                <p style="text-align:center;" >"A ship in port is safe, but that is not what ships are for. Sail out to sea and do new things."</p>
+	            </section>
+	            <section>
+	                
+	<h1>Quotes</h1>
+
+	                <p style="text-align:center;" >"I always promise during my talks that if anyone in the audience says during the next 12 months, 'But we've always done it that way,' I will immediately materialize beside him and haunt him for the next 24 hours and see if I could get him to take a second look."</p>
+	            </section>
+	            <section>
+	                
+	<h1>National Medal of Technology</h1>
+					<img src="medalGrace.png" style="display:block; margin-left:auto;margin-right:auto;" ></img>
+	                <p style="text-align:center;" >This award is the highest honor the United States can confer for achievements related to technological progress.</p>
+	            </section>
+	            <section>
+	                
+	<h1>The "Bug"</h1>
+					<img src="bugGrace.png" style="display:block; margin-left:auto;margin:auto;" ></img>
+	                <p style="text-align:center;" >The mythic beast once thought etymologically, to be  responsible for the term computer bug.</p>
+	            </section>
+	        </div>
+
+
+	    </div>
+	</div>
+
+
 
 	<div class="step" id="front12" data-rotate-y="10" data-z="-1200" data-x="-2100" data-y="2250" >
 		<div id="impact" ><img src="impactGrace.jpg" ></img></div>	
@@ -275,15 +414,49 @@ $(function() {
 		}
 	});
 
-
-
 	cube.jmpress("route", ["#bottom","#front1", "#front2", "#front3", "#front6", "#front7", "#front8", "#front11", "#front12", "#front13", "#front1"]);
-
-	
-	
 });
-</script>
 
+$(function() {
+	$.jmpress("template", "nav1", {
+		children: function(idx) {
+			var distanceX = 240;
+			var distanceY = 370;
+			var config = {
+				scale: 0.2,
+				y: -1,
+				x: ((idx%5) - 2) * (1/1),
+				rotateY: 360,
+				secondary: {
+					"": "self",
+					rotateY: 0,
+					x: 0,
+					y: 0,
+					scale: 1
+				}
+			};
+			if(idx % 2 != 0) {
+				config.y = -config.y;
+			}
+			config.x = config.x * distanceX;
+			config.y = config.y * distanceY;
+			return config;
+		}
+	});
+	$('#nav1').jmpress({
+		stepSelector: "section",
+		containerClass: "jmpress",
+		hash: { use: false },
+		fullscreen: false,
+
+	});
+})
+</script>
+<script type="text/javascript">
+
+;
+
+</script>
 
 </body>
 </html>

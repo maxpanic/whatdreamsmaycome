@@ -29,7 +29,8 @@ body {
 	box-sizing:         border-box;
 }
 p {
-	font-size: 50px;
+	font-size: 35px;
+	font-family: Cambria Math;
 }
 
 input {
@@ -43,9 +44,9 @@ li {
 }
 
 #front {
-	background-image: url('wallpaper.png');
-	width: 6000px;
-    height: 4000px;
+	background-image: url('wallpaper.jpg');
+	width: 20000px;
+    height: 12000px;
 	background-color:rgba(0,0,0,0);
 	border: none;
 	pointer-events: none;
@@ -54,7 +55,6 @@ li {
 #bottom {
 	background-color:rgba(0,0,0,0);
 	border: none;
-	
 }
 
 #desk {
@@ -83,27 +83,24 @@ li {
 .info {
 	background-color:rgba(255,255,255,0.7);
 	border: 2px solid gray;
-
+	position: absolute;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
 }
 #info1 {
-	position: absolute;
 	right: 600px;
 	top: -300px;
-
+	position: absolute;
 }
 #info2 {
 	width: 1400px;
     height: 775px;
-	position: absolute;
 	right: -1800px;
 	top: -100px;
 }
 #info3 {
 	width: 1200px;
     height: 800px;
-	position: absolute;
 	right: -1850px;
 	top: -100px;
 }
@@ -111,7 +108,6 @@ li {
 #info6 {
 	width: 1400px;
     height: 1000px;
-	position: absolute;
 	right: -1800px;
 	top: 150px;
 }
@@ -119,7 +115,6 @@ li {
 #info7 {
 	width: 1200px;
     height: 1200px;
-	position: absolute;
 	right: -1600px;
 	top: 50px;
 }
@@ -127,7 +122,6 @@ li {
 #info11 {
 	width: 1200px;
     height: 1200px;
-	position: absolute;
 	right: -1550px;
 	top: -150px;
 }
@@ -135,17 +129,26 @@ li {
 #info12 {
 	width: 1200px;
     height: 1000px;
-	position: absolute;
 	right: 675px;
 	top: 250px;
 }
 
 #info13 {
-	width: 700px;
-    height: 800px;
-	position: absolute;
-	right: -600px;
+	width: 1200px;
+    height: 1000px;
+	right: -900px;
 	top: 50px;
+}
+
+#nav1 {
+	top: 500px;
+
+}
+
+.nav li {
+	font-size: 25px;
+	font-family: Cambria Math;
+
 }
 
 #front1 {
@@ -175,8 +178,8 @@ li {
 }
 
 #front8 {
-	left: -475px;
-	top: -75px;
+	left: 75px;
+	top: -320px;
 	
 }
 
@@ -218,4 +221,61 @@ opacity: 1;
     opacity: 0;
 }
 .step.nested-active, .step.active, .step.active .step { opacity: 1 }
+}
+
+.nav.jmpress {
+width: 600px;
+height: 400px;
+background: #F29E88;
+border: 5px solid #525855;
+border-radius: 5px;
+}
+
+.nav.jmpress section {
+width: 700px;
+height: 500px;
+padding: 25px;
+margin-bottom: 30px;
+margin-top: -10px;
+-webkit-transition: 1s;
+-moz-transition: 1s;
+-ms-transition: 1s;
+-o-transition: 1s;
+transition: 1s;
+
+/*background-color: #B2342C;*/
+background-color: gray;
+border: 2px solid gray;
+border-radius: 5px;
+overflow: visible!important;
+color: #1E0403;
+
+cursor: pointer;
+}
+
+.nav.jmpress section.active {
+color: #1E0403;
+
+cursor: inherit;
+}
+
+.nav.jmpress section p {
+-webkit-transition: 1s;
+-moz-transition: 1s;
+-ms-transition: 1s;
+-o-transition: 1s;
+transition: 1s;
+}
+
+.nav.jmpress section:not(.active) p {
+/*font-size: 6pt;*/
+/*opacity: 0;*/
+}
+
+.nav.jmpress section h1 {
+-webkit-transition: 1s;
+-moz-transition: 1s;
+-ms-transition: 1s;
+-o-transition: 1s;
+transition: 1s;
 }
