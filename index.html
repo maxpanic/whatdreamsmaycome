@@ -4,14 +4,14 @@
 	<meta charset="utf-8" />
 	<title>Grace Hopper</title>
 
-	<meta name="description" content="jmpress.js is a jQuery plugin to build a website on the infinite canvas">
-	<meta name="author" content="Kyle Robinson Young @shama & Tobias Koppers @sokra" />
+	<meta name="description" content="Grace Hopper">
+	<meta name="author" content="Sean Robertson" />
 	<meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=yes" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 	<link href="cube.css" rel="stylesheet" type="text/css" />
 
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script type="text/javascript" src="jmpress2.js"></script>
 
 
@@ -21,7 +21,7 @@
         
 
 <div id="cube">
-	<div class="step" id="front" data-z="-2200" >	
+	<div class="step" id="front" data-z="-2200" data-scale="3" >	
 	</div>
 	<div class="step" id="desk" data-rotate-x="90" data-rotate-y="0" data-z="-1500" data-y="-80" >
 		ledge
@@ -93,9 +93,13 @@
 	<div class="step" id="bottom" data-rotate-y="3" data-z="-2100" data-x="-4000" data-y="800" >
 		
 		<div data-jmpress="fade after 2s step" data-rotate-y="-25" ><img src="grace.png" ></img></div>
+		<div id="start" data-jmpress="fade after 3s step" >
+					<p style="text-align:center;" >Press Space to advance</p>
+			</div>
 		<div id="info1" data-jmpress="fade after 1s step">
 		<img src="clock.png" ></img>
 		</div>
+			
 		
 	</div>
 

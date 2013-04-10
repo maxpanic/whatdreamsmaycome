@@ -1,7 +1,7 @@
 /** GENERAL **/
 body {
 	font-family: Verdana, sans-serif;
-	background-color:gray;
+	background-color:black;
 	min-height: 740px;
 	-webkit-font-smoothing: antialiased;
 	
@@ -45,8 +45,8 @@ li {
 
 #front {
 	background-image: url('wallpaper.jpg');
-	width: 20000px;
-    height: 12000px;
+	width: 4000px;
+    height: 3000px;
 	background-color:rgba(0,0,0,0);
 	border: none;
 	pointer-events: none;
@@ -57,6 +57,10 @@ li {
 	border: none;
 }
 
+#start {
+	position: absolute;
+	top: 1000px;
+}
 #desk {
 	width: 5000px;
     height: 1500px;
