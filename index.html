@@ -9,10 +9,10 @@
 	<meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=yes" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<link href="cube.css" rel="stylesheet" type="text/css" />
+	<link href="scripts/cube.css" rel="stylesheet" type="text/css" />
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script type="text/javascript" src="jmpress2.js"></script>
+	<script type="text/javascript" src="scripts/jmpress2.js"></script>
 
 
 </head>
@@ -21,6 +21,20 @@
         
 
 <div id="cube">
+
+	<div class="step" id="bottom" data-rotate-y="3" data-z="-2100" data-x="-4000" data-y="800" >
+		
+		<div data-jmpress="fade after 2s step" data-rotate-y="-25" ><img src="pics/grace.png" ></img></div>
+		<div id="start" data-jmpress="fade after 3s step" >
+					<p style="text-align:center;" >Press Space to advance</p>
+			</div>
+		<div id="info1" data-jmpress="fade after 1s step">
+		<img src="pics/clock.png" ></img>
+		</div>
+			
+		
+	</div>
+
 	<div class="step" id="front" data-z="-2200" data-scale="3" >	
 	</div>
 	<div class="step" id="desk" data-rotate-x="90" data-rotate-y="0" data-z="-1500" data-y="-80" >
@@ -42,7 +56,7 @@
 	</div>-->
 
 	<div class="step" id="front3" data-rotate-x="5" data-rotate-y="5" data-z="-1600" data-x="0" data-y="-600" >
-		<div id="vasser" ><img src="vasser.jpg" ></img></div>
+		<div id="vasser" ><img src="pics/vasser.jpg" ></img></div>
 		<div class="info" id="info3" data-jmpress="fade after 1s step">
 			<div data-jmpress="fade after 2s step" >
 				<br></br>
@@ -67,7 +81,7 @@
 	</div>
 
 	<div class="step" id="front2" data-rotate-y="0" data-z="-1100" data-x="2200" data-y="-800" >
-		<div id="childhood" ><img src="youngGrace.jpg" ></img></div>
+		<div id="childhood" ><img src="pics/youngGrace.jpg" ></img></div>
 		<div class="info" id="info2" data-jmpress="fade after 1s step">
 			<br></br>
 			<br></br>
@@ -84,24 +98,13 @@
 	    
 	<div class="step" id="front1" data-rotate-y="3" data-z="-900" data-x="-1900" data-y="-500" >
 		<video id="video" height=720 width=1200 controls >			
-			<source src="introGrace.webm" type="video/webm" />
-			<source src="introGrace.mp4" type="video/mp4" />
+			<source src="pics/introGrace.webm" type="video/webm" />
+			<source src="pics/introGrace.mp4" type="video/mp4" />
 		</video>
 
 	</div>
 	
-	<div class="step" id="bottom" data-rotate-y="3" data-z="-2100" data-x="-4000" data-y="800" >
-		
-		<div data-jmpress="fade after 2s step" data-rotate-y="-25" ><img src="grace.png" ></img></div>
-		<div id="start" data-jmpress="fade after 3s step" >
-					<p style="text-align:center;" >Press Space to advance</p>
-			</div>
-		<div id="info1" data-jmpress="fade after 1s step">
-		<img src="clock.png" ></img>
-		</div>
-			
-		
-	</div>
+
 
 
 
@@ -121,21 +124,21 @@
 
 
 	<div class="step" id="randPic1" data-rotate-x="0" data-z="-1700" data-x="-400" data-y="1000" >
-		<div id="randPic" ><img src="randPic1.jpg"></img></div>
+		<div id="randPic" ><img src="pics/randPic1.jpg"></img></div>
 	</div>
 
 
 
 	<div class="step" id="front8" data-rotate-z="90" data-z="-2000" data-x="7000" data-y="1000" >
 		<video id="video2" controls height=720 width=1200 >
-			<source src="nanoGrace.webm" type="video/webm" />
-			<source src="nanoGrace.mp4" type="video/mp4" />
+			<source src="pics/nanoGrace.webm" type="video/webm" />
+			<source src="pics/nanoGrace.mp4" type="video/mp4" />
 		</video>
 		
 	</div>
 
 	<div class="step" id="front7" data-rotate-y="-5" data-z="-1500" data-x="1650" data-y="900" >
-		<div id="teaching" ><img src="teachingGrace.jpg"></img></div>
+		<div id="teaching" ><img src="pics/teachingGrace.jpg"></img></div>
 		<div class="info" id="info7" data-jmpress="fade after 1s step">
 			<br></br>
 			<br></br>
@@ -150,7 +153,7 @@
 	</div>
 
 	<div class="step" id="front6" data-rotate-y="10" data-z="-1100" data-x="-1100" data-y="700" data-up="#front" data-down="#back">
-		<div id="inventions" ><img src="inventionsGrace.jpg"></img></div>
+		<div id="inventions" ><img src="pics/inventionsGrace.jpg"></img></div>
 		<div class="info" id="info6" data-jmpress="fade after 1s step">
 			<br></br>
 			<br></br>
@@ -182,14 +185,14 @@
 	-->
 
 	<div class="step" id="front0" data-rotate-x="5" data-rotate-y="-5"data-z="-1600" data-x="800" data-y="2700" >
-		<div id="randPic2" ><img src="blueGrace.jpg" ></img>
+		<div id="randPic2" ><img src="pics/blueGrace.jpg" ></img>
 		</div>
 	</div>
 
 
 	<div class="step" id="front13" data-rotate-x="5" data-rotate-y="5" data-z="-1400" data-x="100" data-y="2750">
     <div id="navy">
-        <img src="navy.jpg"></img>
+        <img src="pics/navy.jpg"></img>
     </div>
     <div class="info" id="info13" data-jmpress="fade after 2s step">
 
@@ -334,13 +337,13 @@
 	            <section>
 	                
 	<h1>National Medal of Technology</h1>
-					<img src="medalGrace.png" style="display:block; margin-left:auto;margin-right:auto;" ></img>
+					<img src="pics/medalGrace.png" style="display:block; margin-left:auto;margin-right:auto;" ></img>
 	                <p style="text-align:center;" >This award is the highest honor the United States can confer for achievements related to technological progress.</p>
 	            </section>
 	            <section>
 	                
 	<h1>The "Bug"</h1>
-					<img src="bugGrace.png" style="display:block; margin-left:auto;margin:auto;" ></img>
+					<img src="pics/bugGrace.png" style="display:block; margin-left:auto;margin:auto;" ></img>
 	                <p style="text-align:center;" >The mythic beast once thought etymologically, to be  responsible for the term computer bug.</p>
 	            </section>
 	        </div>
@@ -352,7 +355,7 @@
 
 
 	<div class="step" id="front12" data-rotate-y="10" data-z="-1200" data-x="-2100" data-y="2250" >
-		<div id="impact" ><img src="impactGrace.jpg" ></img></div>	
+		<div id="impact" ><img src="pics/impactGrace.jpg" ></img></div>	
 		<div class="info" id="info12" data-jmpress="fade after 1s step">
 		<br></br>
 			<br></br>
@@ -368,7 +371,7 @@
 
 	    
 	<div class="step" id="front11" data-rotate-x="2" data-rotate-y="-10" data-z="-900" data-x="2100" data-y="2450" >
-		<div id="legacy" ><img src="legacyGrace.jpg"></img></div>
+		<div id="legacy" ><img src="pics/legacyGrace.jpg"></img></div>
 		<div class="info" id="info11" data-jmpress="fade after 1s step">
 		<br></br>
 			<br></br>

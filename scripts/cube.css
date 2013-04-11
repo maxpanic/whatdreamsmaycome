@@ -44,7 +44,7 @@ li {
 }
 
 #front {
-	background-image: url('wallpaper.jpg');
+	background-image: url('../pics/wallpaper.jpg');
 	width: 4000px;
     height: 3000px;
 	background-color:rgba(0,0,0,0);
@@ -65,7 +65,7 @@ li {
 	width: 5000px;
     height: 1500px;
     pointer-events: none;
-    background-image:url('wood.jpg');
+    background-image:url('../pics/wood.jpg');
 
 }
 #blank {
@@ -74,14 +74,6 @@ li {
     pointer-events: none;
     
 
-}
-#title {
-	height: 1000px;
-	width: 1000px;
-	background-color:rgba(0,0,0,0);
-	border: none;
-	background-image:url('office1.jpg');
-	
 }
 
 .info {
